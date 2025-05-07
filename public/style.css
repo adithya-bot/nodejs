@@ -1,0 +1,537 @@
+
+/* Sets the font, background color, and default font size for the entire page */
+
+body {
+  font-family: Arial, sans-serif; 
+  background-color: white;
+  font-size: 13px;
+}
+
+/* main container */
+.container {
+  width: 1000px;
+  padding: 20px;
+  background-color: #F8F9FA; 
+}
+
+/* Navigation container
+nav.navbar {
+  background-color: #343A40;
+  justify-content: center;
+  align-items: center; 
+  height: 50px;
+}*/
+
+nav.navbar {
+  background-color: #343A40;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Only apply height on wide screens */
+@media (min-width: 501px) {
+  nav.navbar {
+    height: 50px;
+    display: grid;
+  }
+}
+
+
+
+/* Navbar list (menu items) */
+nav ul {
+  display: grid; 
+  align-items: center;
+  list-style: none;
+  grid-template-columns: repeat(6, auto); /* Creates six auto-sized columns */
+  width: fit-content; 
+  text-align: center;
+  height: 50px;
+}
+
+/* Navbar list items */
+nav ul li {
+  display: grid; 
+  align-items: center; 
+  justify-items: center; 
+  margin: 0 15px; /* Spacing between menu items */
+}
+
+/* Navbar links */
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  height: 50px;
+  display: block;
+}
+
+
+/* This container holds both the Experience and Profile sections */
+#container1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Experience takes 2/3, Profile takes 1/3 */
+  align-items: start; 
+  max-width: 1000px;
+  box-sizing: border-box;
+  gap:15px; /* Spacing between sections */
+}
+
+/* The container that holds the entire experience section */
+#experience-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns for experiences */
+  grid-template-rows: auto auto; /* First row for heading, second for experience blocks */
+  gap: 15px;
+  background-color: skyblue;
+  border-radius: 10px;
+  padding: 10px;
+  column-gap: 10px;
+  width: 480px;
+  max-width: 250; 
+  max-height: 250px;
+  text-align: center;
+  margin-top: 10px;  
+  justify-content: center;
+  align-items: center; /* Centers vertically */
+}
+
+/* Centering the Experience Heading */
+#experience-container h2 {
+  grid-column: span 2; /* Makes the heading span across both columns */
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Individual Experience Blocks */
+.experience {
+  background-color: white;
+  padding: 10px;
+  /* margin: 5px; */
+  border-radius: 10px;
+  text-align: center;
+  height: auto;
+  width: 90%; /* adjusting to fit inside grid */
+  max-width: 250px;
+  display: block;
+}
+
+.experience p {
+  font-size: 12px; 
+  width: 90%; 
+  margin: 10px auto; 
+  text-align: center;
+}
+
+/* Experience icons */
+.experience img {
+  width: 50px;
+  height: 40px;
+}
+
+/* Contains profile picture and description */
+#photo {
+  width: 250px;
+  height: auto;
+  vertical-align: top;
+  margin-left: 200px; /* Pushes the profile section to the right */
+  text-align: center;
+}
+
+/* Profile picture styling */
+#photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px; /* Adds rounded corners to the image */
+  margin-top: 10px;
+}
+
+/* Name styling inside the profile section */
+#photo h3 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+/* Profile description styling */
+#photo p {
+  font-weight: bold; /* Makes text bold */
+  font-style: italic; /* Italicizes text */
+}
+
+/* Holds both Skills and Achievements side by side */
+.skills-achievements {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between sections */
+  width: 100%;
+  max-width: 1000px;
+  margin: auto; 
+  margin-top: 5px;
+}
+
+/* Skills Section */
+#skills {
+  background-color: skyblue;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#achievements {
+  background-color: skyblue;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Individual achievement items */
+.achievements {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Icon and Text layout */
+  align-items: center; /* Align text and image to the middle */
+  gap: 15px; /* Space between icon and text */
+  margin-bottom: 15px;
+}
+
+/* Achievement Icons */
+.achievements img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Achievement Text */
+.side-text {
+  font-size: 14px;
+  /* font-weight: bold; */
+  text-align: left;
+}
+
+/* contains all project items */
+#projects {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  grid-template-rows: auto auto;
+  text-align: center;
+  background-color: skyblue;
+  height: auto;
+  /* margin: 5px ;*/
+  margin-top: 10px; 
+  border-radius: 10px;
+  align-items: center; 
+  justify-items: center; 
+}
+
+/*individual projects*/
+.project {
+  max-width: 150px;
+  text-align: center;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+#projects h2 {
+  grid-column: span 3; 
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 12px; 
+  width: 90%; /* Ensures text does not exceed block size */
+  margin: 10px auto; 
+  text-align: center;
+}
+
+.project img {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+/*Contains certifications and contact*/
+#container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#certifications {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns for certifications */
+  grid-template-rows: auto auto; /* First row for heading, second for certification blocks */
+  gap: 15px;
+  background-color: skyblue;
+  border-radius: 10px;
+  padding: 10px;
+  column-gap: 10px;
+  width: 100%;
+  max-width: 465px; 
+  max-height: 250px;
+  text-align: center;
+  margin-top: 10px;
+  /* margin: 5px;  */
+}
+
+/* Centering the certification Heading */
+#certifications h2 {
+  grid-column: span 2; /* Makes the heading span across both columns */
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Individual certification Blocks */
+.certification {
+  background-color: white;
+  padding: 10px;
+  /* margin: 5px; */
+  border-radius: 10px;
+  text-align: center;
+  height: auto;
+  width: 90%; /* Ensures it fits inside grid */
+  max-width: 250px;
+  display: block;
+}
+.certification p {
+  font-size: 12px; 
+  width: 90%; 
+  margin: 10px auto; 
+  text-align: center;
+}
+
+.certification img {
+  width: 50px;
+  height: 40px;
+}
+
+#contact {
+  width: 490px;
+  border-radius: 10px;
+  /* margin: 5px; */
+  background-color: skyblue;
+  margin-top: 10px;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 20px;
+}
+
+#contact ul li {
+  display: block;
+}
+
+#contact ul li a {
+  font-size: 10px;
+}
+
+#contact ul li a img {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  margin: 30px;
+}
+
+#contact h2, #contact h3 {
+  margin: 20px;
+}
+
+#contact h3 {
+  color: black;
+}
+
+#projects:target, 
+#skills:target, 
+#experience-container:target,
+#achievements:target,
+#certifications:target,
+#contact:target {
+  background-color: #007BFF; /* Change background when targeted */
+  color: black; /* Change text color to black */
+  border-radius: 10px;
+}
+
+/*  Responsive Design for Small Screens
+@media (max-width: 500px) {
+  .navbar {
+    display: none; 
+    visibility: hidden;
+  }
+}
+*/
+
+@media (max-width: 500px) {
+
+  .container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Make Experience & Profile Sections Stack on each other */
+  #container1 {
+    display: grid;
+    grid-template-columns: 1fr; /* Stacks experience & profile */
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* Experience Section */
+  #experience-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack experience blocks */
+    gap: 10px;
+    width: 95%;
+  }
+
+  .experience {
+    width: 90%;
+    max-width: 250px;
+    margin: auto;
+  }
+
+  /* Profile Section */
+  #photo {
+    width: 90%;
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+  }
+
+  /* Skills and Achievements Section */
+  .skills-achievements {
+    display: grid;
+    grid-template-columns: 1fr; /* Stacks Skills & Achievements */
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* Achievements Layout */
+  .achievements {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Image and Text */
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Projects Section */
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack projects */
+    gap: 10px;
+    width: 100%;
+    
+  }
+
+  .project {
+    width: 90%;
+    max-width: 120px;
+    margin: auto;
+  }
+
+  /* Certifications & Contact Section */
+  #container2 {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack sections vertically */
+    gap: 10px;
+    width: 100%;
+  }
+
+  #certifications {
+    width: 95%;
+  }
+  
+  #contact {
+    width: 100%;
+    height: 90%;
+  }
+  /* Contact Section */
+  #contact ul {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr); /* Two columns for icons */
+    gap: 10px;
+    height:80%;
+  }
+
+  #contact ul li a img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin: 30px;
+  }
+
+
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #343A40;
+  color: white;
+  text-align: right;
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar.show {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  justify-items: center;
+  background-color: #343A40;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #555;
+    text-align: center;
+  }
+
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+  }
+}
+
+
+

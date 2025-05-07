@@ -1,0 +1,59 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "releaseDate": "2010-07-16",
+      "duration": "148 min",
+      "director": "Christopher Nolan",
+      "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+      "ratings": 8.8,
+      "synopsis": "A skilled thief is given a chance at redemption if he can successfully perform inception—planting an idea into someone’s subconscious."
+    },
+    {
+      "id": 2,
+      "title": "Parasite",
+      "genre": "Thriller",
+      "releaseDate": "2019-05-30",
+      "duration": "132 min",
+      "director": "Bong Joon-ho",
+      "cast": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
+      "ratings": 8.6,
+      "synopsis": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan."
+    },
+    {
+      "id": 3,
+      "title": "The Grand Budapest Hotel",
+      "genre": "Comedy-Drama",
+      "releaseDate": "2014-03-28",
+      "duration": "99 min",
+      "director": "Wes Anderson",
+      "cast": ["Ralph Fiennes", "Tony Revolori", "Saoirse Ronan"],
+      "ratings": 8.1,
+      "synopsis": "The adventures of a legendary concierge at a famous hotel and the lobby boy who becomes his most trusted friend."
+    },
+    {
+      "id": 4,
+      "title": "Everything Everywhere All at Once",
+      "genre": "Action/Adventure",
+      "releaseDate": "2022-03-11",
+      "duration": "139 min",
+      "director": "Daniel Kwan, Daniel Scheinert",
+      "cast": ["Michelle Yeoh", "Ke Huy Quan", "Stephanie Hsu"],
+      "ratings": 8.0,
+      "synopsis": "An unlikely hero must channel her newfound powers to fight bizarre multiverse threats and save existence."
+    },
+    {
+      "id": 5,
+      "title": "Oppenheimer",
+      "genre": "Biography/Drama",
+      "releaseDate": "2023-07-21",
+      "duration": "180 min",
+      "director": "Christopher Nolan",
+      "cast": ["Cillian Murphy", "Emily Blunt", "Robert Downey Jr."],
+      "ratings": 8.7,
+      "synopsis": "A chronicle of the life of J. Robert Oppenheimer and his role in the development of the atomic bomb."
+    }
+  ]
+}
